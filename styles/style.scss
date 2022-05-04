@@ -2,6 +2,8 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -54,7 +56,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 5%;
+    padding-bottom: 2% ;
     .item-1-text{
         p{
             color: white;
@@ -92,5 +94,222 @@ header{
             }
         }
     }
+
+}
+.card-section{
+    width: 100%;
+    height: 1550px;
+    background-color: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: white;
+    p{
+        text-align: center;
+    }
+    p:nth-child(1){
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+    }
+    p:nth-child(2){
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .card-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .card-item{
+            width: 576px;
+            height: 600px;
+            margin: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            
+            p{
+                text-align: left;
+                margin-left: 30px;
+            }
+            p:nth-child(1){
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 2px;
+            }
+            p:nth-child(2){
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .card-btn{
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 9px 10px 13px 20px;
+                border-radius: 16px;
+                margin-left: 30px;
+                margin-bottom: 30px;
+                .card-btn-circle{
+                    background-color: #181818;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 16px;
+                    margin-right: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;                  
+                }
+            }
+        }
+        .card-item:nth-child(1){
+            background: url(../images/card1.png) no-repeat;
+            background-size: 100%, cover;
+            overflow: hidden;
+        }
+        .card-item:nth-child(2){
+            background: url(../images/card2.png) no-repeat;
+            background-size: 100%, cover;
+            overflow: hidden;
+        }
+        .card-item:nth-child(3){
+            background: url(../images/card3.png) no-repeat;
+            background-size: 100%, cover;
+            overflow: hidden;
+        }
+        .card-item:nth-child(4){
+            background: url(../images/card4.png) no-repeat;
+            background-size: 100%, cover;
+            overflow: hidden;
+        }
+    }
     
+}
+.item-2{
+    height: 540px;
+    width: 100%;
+    background: url(../images/sunset.png) no-repeat;
+    background-size: 100%, cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    .item-2-text{
+        padding-right: 5%;
+        p{
+            color: white;
+        }
+        p:nth-child(1){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;            
+            letter-spacing: 2px;
+        }
+        p:nth-child(2){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .item-2-addtext{
+        display: flex;
+        color: white;
+        justify-content: end;
+        align-items: flex-end;
+        padding-right: 5%;
+        padding-top: 2%;
+        .addtext-item{
+            padding-right: 20px;
+            span{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+.item-3{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    .card-1{
+        width: 50%;
+        background-color: #000000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
+        height: 540px;
+        .card-1-wrap{
+            p{
+                margin: 2%;
+            }
+            p:nth-child(1){
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            p:nth-child(2){
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 32px;
+            }
+            p:nth-child(3){
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .card-btn{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 9px 10px 13px 20px;
+            border-radius: 16px;
+            margin-top: 2%;
+            .card-btn-circle{
+                background-color: #181818;
+                height: 32px;
+                width: 32px;
+                border-radius: 16px;
+                margin-right: 6px;
+            }
+            a{
+                text-decoration: none;
+                color: black;                  
+            }
+        }
+        
+    }
+    .card-2{
+        width: 50%;
+        background: url(../images/photo.png) no-repeat;
+        background-size: 100% 100%, cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .addtext-item{
+            color: white;
+            margin: 3%;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+.leaves{
+    background: url(../images/leaves.png) no-repeat;
+    background-size: 100%, cover;
 }
