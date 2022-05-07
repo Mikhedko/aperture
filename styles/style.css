@@ -7,11 +7,9 @@
 
 header {
   width: 100%;
-  min-height: 12vh;
+  height: 12vh;
   background-color: #181818;
   border: 1px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
@@ -62,7 +60,7 @@ header span {
 }
 
 header .a-btn {
-  padding: 9px 24px 13px 20px;
+  padding: 16px;
   background-color: white;
   color: black;
 }
@@ -71,8 +69,7 @@ header .a-btn {
   height: 100vh;
   width: 100%;
   background: url(../images/mountain.png) no-repeat;
-  background-size: 100%, cover;
-  overflow: hidden;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +80,6 @@ header .a-btn {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding-bottom: 2%;
 }
 
 .preview .preview-text p {
@@ -134,12 +130,12 @@ header .a-btn {
 
 .card-section {
   width: 100%;
-  height: 1550px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   background-color: #000;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   color: white;
+  padding: 10% 0;
 }
 
 .card-section p {
@@ -491,7 +487,7 @@ header .a-btn {
 
 .need-help {
   width: 100%;
-  height: 414px;
+  height: 100vh;
   background-color: #000;
   color: white;
   display: -webkit-box;
@@ -717,5 +713,79 @@ footer .footer-license .sm-logos {
 
 footer .footer-license .sm-logos a {
   padding: 4%;
+}
+
+@media (max-width: 793px) {
+  header {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .menu ul li {
+    padding-top: 30px;
+  }
+  header .menu .menu-btn {
+    padding-top: 100px;
+  }
+  header .menu .menu-btn .a-btn {
+    padding: 10px;
+  }
+  .card-section {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .tools-view {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .tools-view .card-1 {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  .tools-view .card-2 {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  .partners p {
+    text-align: center;
+  }
+  .partners .partners-logos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .need-help {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
