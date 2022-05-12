@@ -38,6 +38,9 @@
     font-size: 15px;
     line-height: 20px;
   }
+  header ul li a:hover {
+    color: #fbbebe;
+  }
   header .menu {
     display: -webkit-box;
     display: -ms-flexbox;
