@@ -63,6 +63,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
   }
   .preview {
     height: 100vh;
@@ -231,7 +232,7 @@
   .photo-view {
     height: 100vh;
     width: 100%;
-    background: url(../images/sunset.png) no-repeat;
+    background: url(../images/sunset.png) no-repeat center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -248,7 +249,17 @@
             align-items: flex-end;
   }
   .photo-view .photo-view-text {
-    padding-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: end;
   }
   .photo-view .photo-view-text p {
     color: white;
@@ -384,7 +395,7 @@
     background-size: cover;
   }
   .partners {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #000;
     display: -webkit-box;
@@ -448,7 +459,7 @@
     background-size: cover;
   }
   .need-help {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-color: #000;
     color: white;
@@ -495,6 +506,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 2%;
     padding: 9px 10px 13px 20px;
     background-color: white;
